@@ -131,8 +131,8 @@ def xyz2grid(x,y,z):    # sintaxis para correr: X,Y,Z=xyz2grid(x,y,z)
     z=np.array(z)
 
     Z=accum(np.array(list(zip(yi,xi))), z,func=None,size=None,fill_value=np.nan,dtype=float)
-    Z=np.flipud(Z)
-    X,Y=np.meshgrid(xs,np.flipud(ys))
+    #Z=np.flipud(Z)
+    X,Y=np.meshgrid(xs,ys)
     
     return X,Y,Z
 
